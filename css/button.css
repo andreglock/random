@@ -34,3 +34,16 @@ div.flexbox div {
     border: solid 0.2em black;
     color: black;
 }
+
+section.two {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    section.one {
+        display: none;
+    }
+    section.two {
+        display: inline-block;
+    }
+}
