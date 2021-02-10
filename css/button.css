@@ -1,0 +1,36 @@
+div.wrapper {
+    margin: 6em;
+    border: .2em darkgray solid;
+    background-color: lightgray;
+    padding: 2em;
+}
+
+div.flexbox {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+}
+
+div.flexbox div {
+    margin-top: 2em;
+    border: solid 0.2em black;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#nol {
+    color: lightgray;
+    border: solid 0.2em lightgray;
+}
+
+#nor:hover {
+    color: lightgray;
+    border: solid 0.2em lightgray;
+    cursor: default;
+}
+
+#nor:hover ~ #nol {
+    border: solid 0.2em black;
+    color: black;
+}
