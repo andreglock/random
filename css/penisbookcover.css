@@ -2,7 +2,7 @@ main {
     display: grid;
     grid-template: repeat(5, 1fr)/ repeat(5, 1fr);
     width: 80vh;
-    height: 80vh;
+    height: 71vh;
     margin: auto;
     margin-top: 10vh;
 }
