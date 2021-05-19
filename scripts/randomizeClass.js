@@ -13,6 +13,7 @@ function randomizeClass(array) {
     return randomizedClass;
 }
 
+// number is the number of people per team
 function makeTeams (array, number) {
     const randomClass = randomizeClass(array);
     const classTeams = [];
@@ -22,6 +23,9 @@ function makeTeams (array, number) {
     }
     for (let i = 0; i < randomClass.length; i) {
         for(let j = 0; j < teams; j++) {
+            if(i >= randomClass.length) {
+                return classTeams;
+            }
             console.log(randomClass[i]);
             classTeams[j].push(randomClass[i]);
             i++;
@@ -31,4 +35,4 @@ function makeTeams (array, number) {
 }
 
 //console.log(randomizeClass(ourClass));
-console.log(makeTeams(ourClass, 3));
+console.log(makeTeams(ourClass, 4));
