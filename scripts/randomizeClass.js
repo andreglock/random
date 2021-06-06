@@ -1,6 +1,6 @@
 const ourClass = [
     'Abdul', 'Alexandru', 'André', 'Carsten', 'Mawi', 'Ferdinand', 'Joseph', 'Kai', 'Kalaya', 
-    'Karin', 'Khushal', 'Lars', 'Lea', 'Maria', 'Mario', 'Maxie', 'Ronnie', 'Rudesh',
+    'Karin', 'Khushal', 'Lars', 'Lea', 'Maria', 'Mario', 'Maxie', 'Ronnie', 'Rudesh', 'Gary',
 ];
 
 function randomizeClass(array) {
