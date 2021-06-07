@@ -26,7 +26,6 @@ function makeTeams (array, number) {
             if(i >= randomClass.length) {
                 return classTeams;
             }
-            console.log(randomClass[i]);
             classTeams[j].push(randomClass[i]);
             i++;
         }
