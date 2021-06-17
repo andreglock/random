@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="André">
+    <link rel="stylesheet" href="css/button2.0.css">
+    <link rel="icon" type="image/png" href="./img/favpenis.png"/>
+    <title>Button</title>
+</head>
+<body>
+    <section class="one">
+        <div class="wrapper">
+            Do you have a small penis?
+            <div class="flexbox">            
+                <div id="nor">No</div>
+                <div id="yes">Yes</div>
+                <div id="nol" class="hidden">No</div>
+            </div>
+        </div>
+    </section>
+    <section class="two">
+        <h1>This page can only be visualized in a computer.</h1>
+    </section>
+
+    <script>
+        const nol = document.getElementById("nol");
+        const nor = document.getElementById("nor");
+        const yes = document.getElementById("yes");
+
+
+        yes.addEventListener("click", () => {
+            alert("Ha ha!");
+        });
+
+        nol.addEventListener("mouseenter", () => {
+            nol.classList.add("hidden");
+            nor.classList.remove("hidden");
+        });
+
+        nor.addEventListener("mouseenter", () => {
+            nol.classList.remove("hidden");
+            nor.classList.add("hidden");
+        });
+
+    </script>
+</body>
+</html>
