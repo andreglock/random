@@ -32,7 +32,14 @@ div.flexbox div {
 section.two {
     display: none;
 }
+iv.wrapper {
+    margin: 10px;
+    padding: 1em;
+}
 
+div.flexbox {
+    width: 85%;
+}
 /* @media (max-width: 800px) {
     section.one {
         display: none;
@@ -51,4 +58,12 @@ section.two {
     div.flexbox {
         width: 85%;
     }
+}
+
+@media (min-width: 950px) {
+    div.wrapper {
+        margin: auto;
+        margin-top: 6em;
+        width: 673px;
+    } 
 }
