@@ -15,7 +15,7 @@
             <div class="flexbox">            
                 <div id="nor">No</div>
                 <div id="yes">Yes</div>
-                <div id="nol" class="hidden">No</div>
+                <div id="nol" class="hidden"></div>
             </div>
         </div>
     </section>
@@ -34,12 +34,38 @@
         });
 
         nol.addEventListener("mouseenter", () => {
+            if (nor.classList.length !== 0) {
+                nor.classList.remove("hidden");
+                nor.innerText = "No";
+                nol.innerText = "";
+            }
             nol.classList.add("hidden");
-            nor.classList.remove("hidden");
         });
 
         nor.addEventListener("mouseenter", () => {
-            nol.classList.remove("hidden");
+            if (nol.classList.length !== 0) {
+                nol.classList.remove("hidden");
+                nol.innerText = "No";
+                nor.innerText = "";
+            }
+            nor.classList.add("hidden");
+        });
+
+        nol.addEventListener("click", () => {
+            if (nor.classList.length !== 0) {
+                nor.classList.remove("hidden");
+                nor.innerText = "No";
+                nol.innerText = "";
+            }
+            nol.classList.add("hidden");
+        });
+
+        nor.addEventListener("click", () => {
+            if (nol.classList.length !== 0) {
+                nol.classList.remove("hidden");
+                nol.innerText = "No";
+                nor.innerText = "";
+            }
             nor.classList.add("hidden");
         });
 

@@ -16,6 +16,8 @@ div.flexbox {
 div.flexbox div {
     margin-top: 2em;
     border: solid 0.3em rgb(82, 82, 82);
+    width: 1.4em;
+    text-align: center;
     border-radius: 0.8em;
     padding: 1em;
     cursor: pointer;
@@ -31,11 +33,22 @@ section.two {
     display: none;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     section.one {
         display: none;
     }
     section.two {
         display: inline-block;
+    }
+} */
+
+@media (max-width: 600px) {
+    div.wrapper {
+        margin: 10px;
+        padding: 1em;
+    }
+
+    div.flexbox {
+        width: 85%;
     }
 }
